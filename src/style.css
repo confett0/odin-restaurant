@@ -48,11 +48,6 @@ nav > ul > li {
     list-style: none;
 }
 
-nav > ul > li > a {
-    color: #fff;
-    text-decoration: none;
-}
-
 main {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), 

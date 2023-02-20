@@ -1,4 +1,4 @@
 import "./style.css";
-import Brunch from "./images/brunch.jpg";
+import { loadWebsite } from "./website";
 
-console.log("hello world!");
+loadWebsite();
