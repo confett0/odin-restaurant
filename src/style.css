@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,11 +37,15 @@ h1 {
 }
 
 h3 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 p {
     margin-bottom: 15px;
+}
+
+a {
+    color: #fff;
 }
 
 button {
@@ -67,13 +78,18 @@ header h1 {
 
 nav>ul {
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
 nav>ul>li {
     color: #fff;
     cursor: pointer;
     list-style: none;
+    transition: transform 0.3s;
+}
+
+nav>ul>li:hover {
+    transform: translate(0,-5px);
 }
 
 .active {
@@ -81,7 +97,7 @@ nav>ul>li {
 }
 
 main {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 110px);
 }
 
 /* Home page styling */
@@ -93,7 +109,7 @@ main {
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 110px);
 }
 
 .cta {
@@ -132,6 +148,10 @@ main {
     text-align: center;
 }
 
+.menu-main h3 {
+    margin-bottom: 0;
+}
+
 /* Contact page styling */
 
 .contact-header {
@@ -152,12 +172,24 @@ main {
     text-align: center;
 }
 
+.contact-main p {
+    margin-bottom: 2px;
+}
+
+.contact-main h3 {
+    margin-top: 20px;
+}
+
+.contact-main h3:first-child {
+    margin-top: 0;
+}
+
 footer {
     background-color: #0C3552;
     color: #fff;
     font-size: 0.9rem;
-    height: 40px;
-    padding: 8px;
+    height: 50px;
+    padding: 14px;
     text-align: center;
 }
 
