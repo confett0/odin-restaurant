@@ -41,9 +41,14 @@ button {
     border: none;
     background: #5B0C0E;
     color: #fff;
+    cursor: pointer;
     font-size: 0.8rem;
     padding: 18px 24px;
     text-transform: uppercase;
+}
+
+button:hover {
+    background: #0C3552;
 }
 
 header {
@@ -67,7 +72,12 @@ nav>ul {
 
 nav>ul>li {
     color: #fff;
+    cursor: pointer;
     list-style: none;
+}
+
+.active {
+    border-bottom: 1px solid #fff;
 }
 
 main {
@@ -149,4 +159,23 @@ footer {
     height: 40px;
     padding: 8px;
     text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .home-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta {
+        padding: 15px;
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.4rem;
+    }
 }
